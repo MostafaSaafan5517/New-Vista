@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مستندات حكوميه | نيو فيستا</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicons/favicon-16x16.png" type="image/x-icon">
+
+  <!-- CSS Files -->
+  <!-- == Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- == Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <!-- == Custom -->
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/documents.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header></header>
+  <!-- Main -->
+  <main>
+    <!-- The background image -->
+    <div class="pic position-relative">
+      <img src="../images/pages/documents/pic.jpg" class="w-100 object-fit-cover" alt="">
+    </div>
+
+    <!-- Heading -->
+    <div class="heading text-center position-relative end-50">
+      <h2>تسهيل إجراءاتك الحكومية مع نيو فيستا!</h2>
+      <p>استمتع بالتفاصيل المذهلة والأسعار المغرية في كل خطوة من إجراءاتك الحكومية. انطلق في رحلة من
+        الكفاءة والتميز مع نيو فيستا، حيث تنتظرك الابتكارات الجديدة في تنظيم المستندات.</p>
+    </div>
+
+    <!-- Booking form -->
+    <form action="" method="post" id="sheetdb-form" class="row g-2 needs-validation" novalidate>
+      <!-- Full Name -->
+      <div class="col-12">
+        <input type="text" id="fullname" class="form-control" placeholder="الاسم بالكامل" name="data[الاسم بالكامل]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابة اسمك بالكامل!
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div class="col-12">
+        <input type="number" id="mobile" class="form-control" placeholder="الهاتف" name="data[الهاتف]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة رقم الهاتف!
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-12">
+        <input type="text" id="address" class="form-control" placeholder=" العنوان الشارع / الحي / المحافظه"
+          name="data[العنوان]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة العنوان !
+        </div>
+      </div>
+      <!-- Service -->
+      <div class="col-12">
+        <select id="service-type" class="form-select" name="data[الخدمه]" required>
+          <option value="" disabled selected>اختر الخدمه</option>
+          <option value="شهادات ميلاد">شهادات ميلاد</option>
+          <option value="شهادات وفاه">شهادات وفاه</option>
+          <option value="قسيمة زواج">قسيمة زواج</option>
+          <option value="قسيمة طلاق">قسيمة طلاق</option>
+          <option value="قيد فردى">قيد فردى</option>
+          <option value="قيد عائلى">قيد عائلى</option>
+          <option value="ترجمة مستندات">ترجمة مستندات</option>
+          <option value="توثيقات سفارات">توثيقات سفارات</option>
+        </select>
+        <div class="invalid-feedback">
+          * يجب تحديد الخدمه !
+        </div>
+      </div>
+      <!-- Date -->
+      <div class="col-12">
+        <input type="text" id="date" class="form-control" value="" name="data[تاريخ تسجيل الطلب]" />
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" id="submit" class="btn btn-primary">تأكيد الطلب</button>
+    </form>
+
+    <!-- Successful Message ! -->
+    <div class="success">
+      <div class="message">
+        <img src="../images/icons/correct.png" alt="">
+        <p class="f">تم تسجيل طلبك بنجاح!</p>
+        <p class="s"> سيتم التواصل معك في اقرب وقت</p>
+        <div class="btn bg-primary text-white">تأكيد</div>
+      </div>
+    </div>
+
+    <div class="docs popular position-relative text-center end-50">
+      <h2 class="position-relative d-inline">أشهر الخدمات الحكوميه</h2>
+      <div class="swiper docs-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/pages/documents/affairs.png" alt="">
+            <h3>الخارجيه المصريه</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/pages/documents/embassy.jpg" alt="">
+            <h3>السفارات والقنصليات</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/pages/documents/official-docs.jpg" alt="">
+            <h3>المستخرجات الرسميه</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/pages/documents/passport.png" alt="">
+            <h3>جوازات السفر</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/pages/documents/translation.jpg" alt="">
+            <h3>الترجمه المعتمده</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- JS Files -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="header-footer.js"></script>
+  <script src="../js/form-submision.js"></script>
+  <script src="../js/documents.js"></script>
+</body>
+
+</html>

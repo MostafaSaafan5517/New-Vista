@@ -1,0 +1,132 @@
+/* Popular Journies */
+.journies {
+  width: 700px;
+  top: 100px;
+  transform: translateX(50%);
+
+  .overlay {
+    width: calc(100vw - 20px);
+    height: calc(100% + 50px);
+  }
+
+  .switch {
+    margin-bottom: 40px;
+
+    p {
+      text-align: center;
+      margin: 0 10px;
+      padding-bottom: 8px;
+      font-weight: 500;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .active {
+      color: var(--second-color);
+      border-bottom: 2px solid var(--second-color);
+    }
+  }
+}
+
+.local,
+.global {
+  justify-content: space-evenly;
+
+  .jour {
+    transition: 0.4s;
+    position: relative;
+    width: 170px;
+    height: 250px;
+
+    h4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      text-wrap: nowrap;
+      color: var(--third-color);
+      transition: inherit;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      transition: inherit;
+      box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      h4 {
+        opacity: 1;
+      }
+
+      img {
+        box-shadow: none;
+        filter: brightness(0.6);
+      }
+    }
+  }
+}
+
+.local {
+  display: flex;
+}
+
+.global {
+  display: none;
+}
+
+.airlines {
+  margin-bottom: 50px;
+}
+
+/* Journies Animation */
+.animate {
+  animation: fade-in-top 0.8s ease-in-out 0s 1 normal none;
+}
+
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Query For Flight Booking */
+@media (max-width: 950px) {
+  .journies {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+
+    .local,
+    .global {
+      .jour {
+        width: 50%;
+        height: 100px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

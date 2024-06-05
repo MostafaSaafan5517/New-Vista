@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز طيران | نيو فيستا</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicons/favicon-16x16.png" type="image/x-icon">
+
+  <!-- CSS Files -->
+  <!-- == Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- == Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <!-- == Custom -->
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/flight-booking.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header></header>
+
+  <!-- Main -->
+  <main>
+    <!-- The background image -->
+    <div class="pic position-relative">
+      <img src="../images/pages/flight-booking/pic.jpg" class="w-100 object-fit-cover" alt="">
+    </div>
+
+    <!-- Heading -->
+    <div class="heading text-center position-relative end-50">
+      <h2>استكشف عوالم جديدة مع نيو فيستا!</h2>
+      <p>نحن نعدك بتجربة حجز ممتعة وملهمة مع تفاصيل مذهلة وأسعار مغرية. انطلق في رحلة من الجمال والتميز، حيث ينتظرك كل
+        ما هو جديد ومبتكر.</p>
+    </div>
+
+    <!-- Booking form -->
+    <form action="" method="post" id="sheetdb-form" class="row g-2 needs-validation" novalidate>
+      <!-- Full Name -->
+      <div class="col-12">
+        <input type="text" id="fullname" class="form-control" placeholder="الاسم بالكامل" name="data[الاسم بالكامل]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابة اسمك بالكامل!
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div class="col-12 col-md-6">
+        <input type="number" id="mobile" class="form-control" placeholder="الهاتف" name="data[الهاتف]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة رقم الهاتف!
+        </div>
+      </div>
+      <!-- Destination -->
+      <div class="col-12 col-md-6">
+        <input type="text" id="destination" class="form-control" placeholder="مسافر الى" name="data[الوجهه]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة وجهة الوصول!
+        </div>
+      </div>
+      <!-- travel date -->
+      <div class="col-12 col-md-6">
+        <input type="text" id="travel-date" class="form-control jourDate" placeholder="تاريخ الذهاب"
+          name="data[تاريخ الذهاب]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة تاريخ الذهاب!
+        </div>
+      </div>
+      <!-- Return Date -->
+      <div class="col-12 col-md-6">
+        <input type="text" id="return-date" class="form-control jourDate" placeholder="تاريخ العوده"
+          name="data[تاريخ العوده]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة تاريخ العوده!
+        </div>
+      </div>
+      <!-- Service -->
+      <div class="col-12">
+        <input type="text" id="service" class="form-control" value="حجز طيران" name="data[الخدمه]" readonly>
+      </div>
+      <!-- Date -->
+      <div class="col-12">
+        <input type="text" id="date" class="form-control" value="" name="data[تاريخ تسجيل الطلب]" />
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" id="submit" class="btn btn-primary">تأكيد الطلب</button>
+    </form>
+
+    <!-- Successful Message ! -->
+    <div class="success">
+      <div class="message">
+        <img src="../images/icons/correct.png" alt="">
+        <p class="f">تم تسجيل طلبك بنجاح!</p>
+        <p class="s"> سيتم التواصل معك في اقرب وقت</p>
+        <div class="btn bg-primary text-white">تأكيد</div>
+      </div>
+    </div>
+
+    <!-- Popular journies -->
+    <div
+      class="journies position-relative end-50 d-flex flex-column justify-content-center align-items-center user-select-none">
+      <img src="../images/pages/popular-bg.svg" class="overlay position-absolute object-fit-cover z-n1" alt="">
+      <!-- Background -->
+      <div class="switch position-relative d-flex">
+        <p class="active">أشهر الرحلات الداخليه</p>
+        <p>أشهر الرحلات الخارجيه</p>
+      </div>
+      <div class="local row gy-4 w-100 h-100 position-relative animate">
+        <div class="jour col-12 col-md-3">
+          <h4>شرم الشيخ</h4>
+          <img src="../images/pages/flight-booking/journies/sharm.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>الغردقه</h4>
+          <img src="../images/pages/flight-booking/journies/hurghada.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>الأهرامات</h4>
+          <img src="../images/pages/flight-booking/journies/pyramids.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>برج القاهره</h4>
+          <img src="../images/pages/flight-booking/journies/cairo-tower.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>اسوان</h4>
+          <img src="../images/pages/flight-booking/journies/aswan.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>الأقصر</h4>
+          <img src="../images/pages/flight-booking/journies/loxur.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>واحة سيوه</h4>
+          <img src="../images/pages/flight-booking/journies/siwa.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>الأسكندريه</h4>
+          <img src="../images/pages/flight-booking/journies/alexandria.jpg" alt="">
+        </div>
+      </div>
+      <div class="global row gy-4 w-100 h-100 position-relative animate">
+        <div class="jour col-12 col-md-3">
+          <h4>الصين</h4>
+          <img src="../images/pages/flight-booking/journies/china.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>انجلترا</h4>
+          <img src="../images/pages/flight-booking/journies/london.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>اسبانيا</h4>
+          <img src="../images/pages/flight-booking/journies/madrid.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>فرنسا</h4>
+          <img src="../images/pages/flight-booking/journies/paris.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>روسيا</h4>
+          <img src="../images/pages/flight-booking/journies/russia.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>امريكا</h4>
+          <img src="../images/pages/flight-booking/journies/usa.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>الامارات</h4>
+          <img src="../images/pages/flight-booking/journies/emirates.jpg" alt="">
+        </div>
+        <div class="jour col-12 col-md-3">
+          <h4>السعوديه</h4>
+          <img src="../images/pages/flight-booking/journies/ksa.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Airlines -->
+    <div class="airlines popular position-relative text-center end-50">
+      <h2 class="position-relative d-inline">أشهر الخطوط الجويه</h2>
+      <div class="swiper air-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/qatar-airways.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/egyptair.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/emirates-airways.png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/etihad-airways.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/ksa-airways.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/royal-jorden.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/airarabia.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/aircairo.png" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/flight-booking/airlines/flynas.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- JS Files -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="header-footer.js"></script>
+  <script src="../js/form-submision.js"></script>
+  <script src="../js/flight-booking.js"></script>
+</body>
+
+</html>

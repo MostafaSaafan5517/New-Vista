@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز تساهيل | نيو فيستا</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicons/favicon-16x16.png" type="image/x-icon">
+
+  <!-- CSS Files -->
+  <!-- == Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- == Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <!-- == Custom -->
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/embassy.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header></header>
+  <!-- Main -->
+  <main>
+    <!-- The background image -->
+    <div class="pic position-relative">
+      <img src="../images/pages/embassy/pic.png" class="w-100 object-fit-cover" alt="">
+    </div>
+
+    <!-- Heading -->
+    <div class="heading text-center position-relative end-50">
+      <h2>احجز موعد السفاره مع نيو فيستا!</h2>
+      <p>دعنا نساعدك في تجهيز أوراقك والتحضير لموعد السفاره</p>
+    </div>
+
+    <!-- Booking form -->
+    <form action="" method="post" id="sheetdb-form" class="row g-2 needs-validation" novalidate>
+      <!-- Full Name -->
+      <div class="col-12">
+        <input type="text" id="fullname" class="form-control" placeholder="الاسم بالكامل" name="data[الاسم بالكامل]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابة اسمك بالكامل!
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div class="col-12 col-md-6">
+        <input type="number" id="mobile" class="form-control" placeholder="الهاتف" name="data[الهاتف]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة رقم الهاتف!
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-12 col-md-6">
+        <input type="text" id="address" class="form-control" placeholder="العنوان الشارع / الحي" name="data[العنوان]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابةالعنوان !
+        </div>
+      </div>
+
+      <!-- Service -->
+      <div class="col-12">
+        <input type="text" id="service" class="form-control" value="حجز موعد تساهيل" name="data[الخدمه]" readonly>
+      </div>
+      <!-- Date -->
+      <div class="col-12">
+        <input type="text" id="date" class="form-control" value="" name="data[تاريخ تسجيل الطلب]" />
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" id="submit" class="btn btn-primary">تأكيد الطلب</button>
+    </form>
+
+    <!-- Successful Message ! -->
+    <div class="success">
+      <div class="message">
+        <img src="../images/icons/correct.png" alt="">
+        <p class="f">تم تسجيل طلبك بنجاح!</p>
+        <p class="s"> سيتم التواصل معك في اقرب وقت</p>
+        <div class="btn bg-primary text-white">تأكيد</div>
+      </div>
+    </div>
+
+    <!-- Pupular embassies -->
+    <div dir="ltr" class="swiper embassy-swiper">
+      <h2 class="position-relative d-inline">بعض سفارات مصر الخارجيه</h2>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/uk.jpg" alt="">
+          <h3>لندن، انجلترا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/berlin.jpg" alt="">
+          <h3> برلين، المانيا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/helsinki.jpg" alt="">
+          <h3>هلسنكي، فنلندا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/kyiv.jpg" alt="">
+          <h3>كييف، اوكرانيا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/mosco.jpg" alt="">
+          <h3>موسكو، روسيا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/oslo.jpg" alt="">
+          <h3>أوسلو، النرويج</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/paris.jpg" alt="">
+          <h3>باريس، فرنسا</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/budapest.JPG" alt="">
+          <h3>بودابست، المجر</h3>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/pages/embassy/prague.JPG" alt="">
+          <h3>براغ، التشيك</h3>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- JS Files -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="header-footer.js"></script>
+  <script src="../js/form-submision.js"></script>
+  <script src="../js/embassy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التأشيرات | نيو فيستا</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicons/favicon-16x16.png" type="image/x-icon">
+
+  <!-- CSS Files -->
+  <!-- == Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- == Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <!-- == Custom -->
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/visa.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header></header>
+  <!-- Main -->
+  <main>
+    <!-- The background image -->
+    <div class="pic position-relative">
+      <img src="../images/pages/visa/pic.png" class="w-100 object-fit-cover" alt="">
+    </div>
+
+    <!-- Heading -->
+    <div class="heading text-center position-relative end-50">
+      <h2>احصل على تأشيرتك، واستمتع برحلاتك حول العالم!</h2>
+      <p>هل تخطط لزيارة بلد آخر؟ سواء للسياحة، الدراسة، أو العمل؟ "نيو فيستا" هنا لمساعدتك فى عمل متطلبات التأشيرات
+        الخاصة بك لأي وجهة.</p>
+    </div>
+
+    <!-- Booking form -->
+    <form action="" method="post" id="sheetdb-form" class="row g-2 needs-validation" novalidate>
+      <!-- Full Name -->
+      <div class="col-12">
+        <input type="text" id="fullname" class="form-control" placeholder="الاسم بالكامل" name="data[الاسم بالكامل]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابة اسمك بالكامل!
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div class="col-12 col-md-6">
+        <input type="number" id="mobile" class="form-control" placeholder="الهاتف" name="data[الهاتف]" required>
+        <div class="invalid-feedback">
+          * يجب كتابة رقم الهاتف!
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-12 col-md-6">
+        <input type="text" id="address" class="form-control" placeholder="العنوان الشارع / الحي" name="data[العنوان]"
+          required>
+        <div class="invalid-feedback">
+          * يجب كتابةالعنوان !
+        </div>
+      </div>
+      <!-- Destination -->
+      <div class="col-12 col-md-6">
+        <select id="destination" class="form-select" name="data[الوجهه]" required>
+          <option value="" disabled selected>اختر الوجهه</option>
+          <option class="sh" value="دول شنغن">دول شنغن</option>
+          <option class="ksa" value="السعوديه">السعوديه</option>
+          <option class="uae" value="الامارات">الامارات</option>
+          <option class="usa" value="أمريكا">أمريكا</option>
+          <option class="online" value="فيزا اونلاين">فيزا اونلاين</option>
+        </select>
+        <div class="invalid-feedback">
+          * يجب كتابة اسم الوجهه !
+        </div>
+      </div>
+      <!-- Visa type -->
+      <div class="col-12 col-md-6">
+        <select id="visa-type" class="form-select" name="data[نوع التأشيره]" required>
+          <option value="" disabled selected>اختر نوع التأشيره</option>
+          <option class="sh" value="شنغن">شنغن</option>
+          <option class="ksa" value="زياره شخصيه">زياره شخصيه</option>
+          <option class="ksa" value="زياره عائليه">زياره عائليه</option>
+          <option class="ksa" value="زياره أعمال">زياره أعمال</option>
+          <option class="ksa" value="زياره سياحيه">زياره سياحيه</option>
+          <option class="ksa" value="استقدام">استقدام</option>
+          <option class="ksa" value="تأشيرة عمره">تأشيرة عمره</option>
+          <option class="ksa" value="برامج عمره">برامج عمره</option>
+          <option class="uae" value="فيزا سياحه شهر">فيزا سياحه شهر</option>
+          <option class="uae" value="فيزا سياحه شهرين">فيزا سياحه شهرين</option>
+          <option class="usa" value="امريكا">امريكا</option>
+          <option class="online" value="اونلاين">اونلاين</option>
+        </select>
+        <div class="invalid-feedback">
+          * يجب كتابة نوع التأشيره !
+        </div>
+      </div>
+
+      <!-- Service -->
+      <div class="col-12 col-md-4">
+        <input type="text" id="service" class="form-control" value="تأشيرات" name="data[الخدمه]" readonly>
+      </div>
+      <!-- Date -->
+      <div class="col-12">
+        <input type="text" id="date" class="form-control" value="" name="data[تاريخ تسجيل الطلب]" />
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" id="submit" class="btn btn-primary">تأكيد الطلب</button>
+    </form>
+
+    <!-- Successful Message ! -->
+    <div class="success">
+      <div class="message">
+        <img src="../images/icons/correct.png" alt="">
+        <p class="f">تم تسجيل طلبك بنجاح!</p>
+        <p class="s"> سيتم التواصل معك في اقرب وقت</p>
+        <div class="btn bg-primary text-white">تأكيد</div>
+      </div>
+    </div>
+
+    <div class="schengen popular position-relative text-center end-50">
+      <h2 class="position-relative d-inline">أشهر دول الشنغن</h2>
+      <div class="swiper schengen-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-denmark.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-france.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-germany.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-greece.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-italy.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-netherlands.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-portugal.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-spain.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-sweden.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/pages/visa/flag-switzerland.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- JS Files -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="header-footer.js"></script>
+  <script src="../js/form-submision.js"></script>
+  <script src="../js/visa.js"></script>
+</body>
+
+</html>
