@@ -2,7 +2,7 @@
 let form = document.querySelector("form");
 
 // add the action attribute to the form
-form.action = "https://sheetdb.io/api/v1/g5uxdacfaeryi";
+form.action = "https://sheetdb.io/api/v1/ua0jk4o01cvqo";
 
 form.addEventListener(
   "submit",
